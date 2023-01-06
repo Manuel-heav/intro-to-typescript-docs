@@ -46,11 +46,37 @@ console.log(numbersAndStrings)
 
 // Objects and Interfaces
 
-interface Person{
+// interface Person{
+//     name: string;
+//     favNumber: number;
+// }
+
+// const person = {
+//     name: "Manuel",
+//     favNumber: 42,
+// };
+
+// function greet(person: Person){
+//     return  `Hello ${person.name}`;
+// }
+
+// console.log(greet({
+//     name: "Manuel",
+//     favNumber: 42,
+// }))
+
+// Optional Properties
+// interface Person{
+//     name: string;
+//     favNumber: number;
+//     loverName?: string; //question mark shows it's optional
+// }
+
+type Person = {
     name: string;
     favNumber: number;
+    loverName?: string; 
 }
-
 const person = {
     name: "Manuel",
     favNumber: 42,
@@ -65,7 +91,20 @@ console.log(greet({
     favNumber: 42,
 }))
 
-// Optional Properties
+function greetPersonAndLover(person: Person){
+    if(person.loverName){
+        return `Hello ${person.name} and your ${person.loverName}`
+    }
+    return greet(person)
+}
+
+console.log(greetPersonAndLover({
+    name: 'Manuel',
+    favNumber: 34,
+    loverName: 'beamer'
+}));
+
+// type
 
 // Classes
 

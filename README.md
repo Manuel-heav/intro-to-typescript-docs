@@ -31,7 +31,7 @@
 
 # Agenda
 
-* [ ] Project Setup
+* [x] Project Setup
   * create `package.json`
     * `npm init -y`
   * install `typescript` as dev dependency
@@ -41,9 +41,9 @@
     * `npm i -D nodemon ts-node`
   * add scripts to `package.json`
     * build, dev, start
-* [ ] [Type Annotations](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
-* [ ] [Inferred Types](https://www.typescriptlang.org/docs/handbook/type-inference.html#handbook-content)
-* [ ] [Union Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
+* [x] [Type Annotations](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+* [x] [Inferred Types](https://www.typescriptlang.org/docs/handbook/type-inference.html#handbook-content)
+* [x] [Union Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
 * [ ] Objects and Interfaces
   * [ ] [Optional Properties](https://www.typescriptlang.org/docs/handbook/2/objects.html#optional-properties)
   * ["duck typing" or "structural typing"](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#structural-type-system)
