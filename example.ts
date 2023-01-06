@@ -1,8 +1,23 @@
 // Type Annotations
 
-let myName: string = "Aman";
-let isCoolL: boolean = true;
-let myNum: number = 42;
+// let myName: string = "Aman";
+// let isCoolL: boolean = true;
+// let myNum: number = 42;
+
+// function add(a : number,b: number) :number
+// {
+//     return a+b;
+// }
+
+// console.log(add(5, 4));
+
+// Inferred Types
+
+
+let myName = "Aman";
+let isCool = true;
+let myNum = 42;
+
 
 function add(a : number,b: number)
 {
@@ -10,7 +25,6 @@ function add(a : number,b: number)
 }
 
 console.log(add(5, 4));
-// Inferred Types
 
 // Union Types
 
