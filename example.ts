@@ -72,10 +72,13 @@ console.log(numbersAndStrings)
 //     loverName?: string; //question mark shows it's optional
 // }
 
-type Person = {
+type StreamerType = "affiliate" | "partner";
+
+interface Person {
     name: string;
     favNumber: number;
     loverName?: string; 
+    streamerType: StreamerType;
 }
 const person = {
     name: "Manuel",
@@ -89,6 +92,7 @@ function greet(person: Person){
 console.log(greet({
     name: "Manuel",
     favNumber: 42,
+    streamerType: "affiliate"
 }))
 
 function greetPersonAndLover(person: Person){
@@ -101,7 +105,8 @@ function greetPersonAndLover(person: Person){
 console.log(greetPersonAndLover({
     name: 'Manuel',
     favNumber: 34,
-    loverName: 'beamer'
+    loverName: 'beamer',
+    streamerType: "affiliate"
 }));
 
 // type
@@ -114,4 +119,4 @@ console.log(greetPersonAndLover({
 
 // Type Assertions
 
-// @ts-ignore / @ts-nocheck
+// @ts-ignore / @ts-nocheck.
